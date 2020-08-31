@@ -243,27 +243,27 @@ function deleteComments(key) {
 
 
 // Event listeners
-window.addEventListener('load', function() {
-  addComments();
-});
-
-function addDeleteButtonListener(className) {
-  const buttons = document.getElementsByClassName(className);
-  for (const button of buttons) {
-    button.addEventListener("click", (event) => {
-      deleteComments(event.target.dataset.key);
-    });
-  }
-}
+// window.addEventListener('load', function() {
+//   addComments();
+// });
+// 
+// function addDeleteButtonListener(className) {
+//   const buttons = document.getElementsByClassName(className);
+//   for (const button of buttons) {
+//     button.addEventListener("click", (event) => {
+//       deleteComments(event.target.dataset.key);
+//     });
+//   }
+// }
 
 if (document.getElementById("playlistSubmit") !== null) {
   document.getElementById("playlistSubmit").addEventListener("click", generatePlaylist);
 }
 
-if (document.getElementById("maxComments") !== null) {
-  const maxCommentsSelect = document.getElementById("maxComments");
-  maxCommentsSelect.addEventListener("change", function() {
-    const numComments = maxCommentsSelect.value;
-    addComments(numComments);
-  });
-}
+// if (document.getElementById("maxComments") !== null) {
+//   const maxCommentsSelect = document.getElementById("maxComments");
+//   maxCommentsSelect.addEventListener("change", function() {
+//     const numComments = maxCommentsSelect.value;
+//     addComments(numComments);
+//   });
+// }
