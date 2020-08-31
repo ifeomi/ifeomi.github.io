@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap');
+
+body {
+  font-family: 'Fanwood Text', serif;
+}
+
+header {
+  background-color: #ffd1dc;
+}
+
+.navbar-brand {
+  font-family: 'Shrikhand', 'Fanwood Text', serif;
+  text-transform: lowercase;  
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Shrikhand', var(--font-family-sans-serif);
+  text-transform: lowercase;
+}
+
+#content {
+  min-height: calc(100vh - 184px);
+}
+
+#content li {
+  list-style-type: '* ';
+}
+
+img {
+  max-width: 320px;
+}
+
+.card-img-top, .art-card {
+  max-width: 500px;
+}
+
+span.title {
+  font-style: italic;
+}
+
+#comment-form {
+  display: none;
+}
+
+.page-item {
+  list-style: none;
+}
+
+.positive-sentiment:hover {
+  text-decoration: underline darkseagreen solid;
+}
+
+.negative-sentiment:hover {
+  text-decoration: underline red solid;
+}
